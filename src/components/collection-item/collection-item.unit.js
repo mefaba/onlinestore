@@ -1,12 +1,12 @@
-import React from 'react';
-import { connect } from "react-redux"
+import React from './node_modules/react';
+import { connect } from "./node_modules/react-redux"
 
-import './Collection.scss';
+import './collection-item.scss';
 import CustomButton from '../custom-button/custom-button.unit';
 import { addItem } from "../../redux/cart/cart-action.js"
 
 
-const Collection = ({ item, addItem }) => {
+const CollectionItem = ({ item, addItem }) => {
   const { name, price, imageUrl } = item;
 
   return (
@@ -35,4 +35,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   null,
   mapDispatchToProps
-)(Collection);
+)(CollectionItem);
