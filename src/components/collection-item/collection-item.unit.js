@@ -1,5 +1,5 @@
-import React from './node_modules/react';
-import { connect } from "./node_modules/react-redux"
+import React from 'react';
+import { connect } from "react-redux"
 
 import './collection-item.scss';
 import CustomButton from '../custom-button/custom-button.unit';
